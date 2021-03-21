@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: /*rgb(32, 35, 48)*/ #050b24;
+    font-family: sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+hr {
+    border-color: #21beee;
+    height: 10px;
+    margin-top: 10px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 1;
+    box-shadow: 0 10px 10px -10px #7e1f83 inset;
+}
+/*LOGO*/
+#logo{
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 2s ease forwards 3s, move 2.5s ease forwards 4.5s;
+}
+#logo path:nth-child(1){
+    stroke-width: 3px;
+    stroke-dasharray: 570;
+    stroke-dashoffset: 570;
+    animation: line-anim 1.6s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-width: 3px;
+    stroke-dasharray: 482;
+    stroke-dashoffset: 482;
+    animation: line-anim 1.9s ease forwards 0.3s;
+}
+#logo path:nth-child(3){
+    stroke-width: 3px;
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line-anim 2.1s ease forwards 0.6s;
+}
+#logo path:nth-child(4){
+    stroke-width: 3px;
+    stroke-dasharray: 307;
+    stroke-dashoffset: 307;
+    animation: line-anim 2.5s ease forwards 0.9s;
+}
+#logo path:nth-child(5){
+    stroke-width: 3px;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: line-anim 2.7s ease forwards 1.2s;
+}
+#logo path:nth-child(6){
+    stroke-width: 3px;
+    stroke-dasharray: 335;
+    stroke-dashoffset: 335;
+    animation: line-anim 2.9s ease forwards 1.5s;
+}
+#logo path:nth-child(7){
+    stroke-width: 3px;
+    stroke-dasharray: 507;
+    stroke-dashoffset: 507;
+    animation: line-anim 3.2s ease forwards 1.8s;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+        stroke: #0b486b;
+    }
+    from{
+        stroke: #7e1f83;
+    }
+    to{
+        stroke: #21beee;
+    }
+}
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #21beee;
+    }
+}
+@keyframes move{
+    to{
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 100px;
+        height: 50px;
+    }
+}
+/*MENU BUTTON*/
+header{
+    height: 50px;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 50px;
+}
+a{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+.menu_button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0%;
+    top: 0.5%;
+    padding-top: 12px;
+    z-index: 2;
+}
+.menu_button_element{
+    width: 25px;
+    height: 3px;
+    background-color: #21beeed7;
+    display: block;
+    margin-top: 5px;
+}
+.menu_links{
+    display: flex;
+    position: fixed;
+    background: linear-gradient(135deg,#050b24, #24043d);
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    clip-path: circle(0px at 90% 3.8%);
+    -webkit-clip-path: circle(0px at 90% 3.8%);
+    transition: all 0.4s ease-out;
+    pointer-events: none;
+}
+.menu_links.open{
+    clip-path: circle(1000px at 90% 3.8%);
+    -webkit-clip-path: circle(1000px at 90% 3.8%);
+    pointer-events: none;
+}
+.menu_links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*MY WORK BUTTON*/
+.quick_nav{
+    width: 120px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 17.5px;
+    /*margin-right: 100px;*/
+    color: white;
+    background-color: #21beee;
+    border: 1px solid #21beee;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    font-family: poppins;
+}
+#eye_icon{
+    float: left;
+    margin-top: 1.75px;
+    margin-left: 10px;
+}
+
+
+/*FONTS AND ANIMATIONS*/
+@font-face {
+    font-family: 'poppins';
+    src: url('PoppinsRegular.ttf');
+}
+/*COLOURS THAT DO
+ATTEMPT OF A PALETTE:
+    7e1f83
+    21beee
+    00635d
+    050b24
+    ffe4e1
+    ffba08
+PURPLES:
+    #541057
+    #7e1f83
+ORANJES:
+    #BF3604
+BLUES:
+    #0b486b
+    #238ac5
+    #6cb4df
+    #bedde7
+    #00b7f1
+    #21beee
+BACKGROUND:
+    rgb(32, 35, 48)
+    rgb(7, 35, 46)
+*/
+
+/*SAME ANIMATION BUT BACKWARDS*/
+/*#logo path:nth-child(7){
+    stroke-width: 3px;
+    stroke-dasharray: 507;
+    stroke-dashoffset: 507;
+    animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(6){
+    stroke-width: 3px;
+    stroke-dasharray: 335;
+    stroke-dashoffset: 335;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(5){
+    stroke-width: 3px;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(4){
+    stroke-width: 3px;
+    stroke-dasharray: 307;
+    stroke-dashoffset: 307;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(3){
+    stroke-width: 3px;
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(2){
+    stroke-width: 3px;
+    stroke-dasharray: 482;
+    stroke-dashoffset: 482;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(1){
+    stroke-width: 3px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: line-anim 2s ease forwards 1.8s;
+}*/
