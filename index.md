@@ -7,8 +7,8 @@
     <title>
         TrialDesign_ Project1
     </title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/indexStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexStyle.css">
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 </head>
 <body>
