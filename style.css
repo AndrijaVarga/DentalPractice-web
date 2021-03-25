@@ -296,7 +296,7 @@ nav ul li ul li a:hover {
 /*! Fonts and animations*/
 @font-face {
   font-family: "poppins";
-  src: url("/PoppinsRegular.ttf");
+  src: url("PoppinsRegular.ttf");
 }
 @font-face {
   font-family: "poiret";
