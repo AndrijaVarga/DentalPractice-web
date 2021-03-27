@@ -7,16 +7,15 @@
     <title>
         Ordinacija Ida Sapun Bažant
     </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="indexStyle.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/indexStyle.css">
+    <link rel="shortcut icon" type="image/png" href="../../images/favicon.png"/>
 </head>
 <body>
-    <div class="wrapper">
         <header>
             <div class="logo">
                 <a href="index.html" class="logo_link">
-                    <img src="logo.png" alt="LogoImage" class="logo_image">
+                    <img src="../../images/logo.png" alt="LogoImage" class="logo_image">
                     <h1 class="logo_name">
                         Ordinacija Ida Sapun Bažant
                     </h1>
@@ -26,25 +25,45 @@
                 <ul class="main_menu">
                     <li class="menu_item" id="first_item_in_main_menu"><a href="index.html" id="homeLink">Home</a>
                     </li>
-                    <li class="menu_item"><a href="aboutus.html">About Us</a>
-                        <!--<ul>
-                            <li><a href="brisi.html" target="blank">Random</a></li>
-                        </ul>-->
-                    </li>
                     <li class="menu_item"><a href="ourWork.html">Our Work</a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Opća dentalna medicina
+                                </a>
+                            </li>
+                            <li>
+                                Protetika
+                            </li>
+                            <li>
+                                Ortodoncija
+                            </li>
+                            <li>
+                                Parodontologija
+                            </li>
+                            <li>
+                                Izbjeljivanje zubi
+                            </li>
+                            <li>
+                                Estetika
+                            </li>
+                        </ul>
                     </li>
-                    <li class="menu_item"><a href="contactUs.html">Contact us</a>
+                    <li class="menu_item"><a href="about.html">About Us</a>
+                        
+                    </li>
+                    <li class="menu_item"><a href="contact.html">Contact us</a>
                     </li>
                 </ul>
                 <ul class="language-menu">
                     <li class="menu_item" class="language" id="croatian">
-                        <a href="#cro" data-reload onClick="refreshPage()">HRV</a>
+                        <a href="../cro/ourWork.html" data-reload onClick="refreshPage()">HRV</a>
                     </li>
                     <li class="menu_item" class="language" id="english">
-                        <a href="#eng" data-reload onClick="refreshPage()">EN</a>
+                        <a href="../en/ourWork.html" data-reload onClick="refreshPage()">EN</a>
                     </li>
                     <li class="menu_item" class="language" id="italian">
-                        <a href="#it" data-reload onClick="refreshPage()">IT</a>
+                        <a href="../it/ourWork.html" data-reload onClick="refreshPage()">IT</a>
                     </li>
                 </ul>
 
@@ -74,9 +93,8 @@
                 </p>
             </div>
         </div>
-    </div>
 
-    <script src="app.js"></script>
-    <script src="languages.js"></script>
+    <script src="../../apps/app.js"></script>
+    <script src="../../apps/languages.js"></script>
 </body>
 </html>

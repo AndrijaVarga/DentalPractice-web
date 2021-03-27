@@ -25,8 +25,8 @@ if(window.location.hash){
     }
 }
 //define language reload onClick illiteration
-for (i=0; i<=dataReload.length; i++){
+for (i = 0; i <= dataReload.length; i++){
     dataReload[i].onClick=function(){
-        location.reload(true);
+        window.location.reload();
     };
 }

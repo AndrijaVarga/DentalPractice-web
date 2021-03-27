@@ -7,40 +7,23 @@ body {
   height: 100%;
   width: 100%;
 }
-/*! Content wrapper*/
-.wrapper {
-  height: 100%;
-  width: 100%;
-  background-color: #c7d9dd;
-}
+
 /*! Header*/
+
 header {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 75px;
-  /*height: 10vh;*/
   background-color: /*#1a2021*/ #131314;
   display: flex;
 }
-/*
-.obrisi-me {
-  width: 5%;
-  height: 10%;
-  background-color: aqua;
-  padding: 15px;
-  align-items: center;
-  display: flex;
-}*/
 
 /*! Logo*/
+
 .logo {
   height: 100%;
   width: 50%;
-  /*background-color: royalblue;*/
-  /*display: block;
-  position: relative;
-  float: left;*/
   display: flex;
   justify-content: left;
   align-items: center;
@@ -49,9 +32,7 @@ header {
   height: 100%;
   padding: 7px;
   display: flex;
-  align-items: center; /*
-  position: relative;
-  float: left;*/
+  align-items: center;
 }
 .logo_image {
   height: 100%;
@@ -86,7 +67,6 @@ nav {
   float: right;
   width: 50%;
   height: 100%;
-  /*background-color: red;*/
   font-family: poppins;
   align-items: center;
 }
@@ -110,7 +90,7 @@ nav ul li:hover{
 }
 nav ul li:hover a{
   color: #ca9a1d;
-  border-radius: 4px;
+  border-radius: 7px;
 }
 nav ul li a {
   display: block;
@@ -127,22 +107,24 @@ nav ul li ul {
   top: 100%;
   background-color: #131314;
   padding: 10px;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 7px 7px;
 }
 nav ul li:hover ul {
   display: block;
 }
 nav ul li ul li {
-  width: 180px;
-  border-radius: 4px;
+  width: 200px;
+  border-radius: 7px;
   list-style: none;
+  color: #da91af;
+  padding: 10px;
 }
 nav ul li ul li a {
   padding: 8px 14px;
 }
 nav ul li ul li a:hover {
   background-color: #3d3737;
-  border-radius: 4px;
+  border-radius: 7px;
 }
 .menu_item {
   display: flex;
@@ -169,9 +151,30 @@ nav ul li ul li a:hover {
   transform-origin: left;
   background: #ca9a1d;
 }
-/*#first_item_in_main_menu {
-  margin-left: 150px;
-}*/
+
+/*Languages menu*/
+.language-menu{
+  width: 25%;
+  height: 100%;
+  margin-left: 5%;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-evenly;
+  padding-left: 0;
+  padding-right: 0;
+}
+#croatian{
+  padding-right: 5;
+  padding-left: 5;
+}
+#english{
+  padding-right: 5;
+  padding-left: 5;
+}
+#italian{
+  padding-right: 5;
+  padding-left: 5;
+}
 
 /*! Burger menu for mobile view*/
 .burger {
@@ -192,7 +195,7 @@ nav ul li ul li a:hover {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1216px) {
   body {
     overflow-x: hidden;
   }
@@ -222,10 +225,7 @@ nav ul li ul li a:hover {
     opacity: 1;
   }
   .burger {
-    display: block; /*
-    float: right;
-    margin-top: 6%;
-    margin-right: 5%;*/
+    display: block;
   }
 
   .menu_active {
@@ -253,18 +253,10 @@ nav ul li ul li a:hover {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
-  /*! Additional formatting needed because I'm an idiot*/
+  /*! Additional formatting*/
   .logo_name {
     display: none;
-  } /*
-  .logo_link {
-    margin-left: 2%;
-    margin-top: 5%;
   }
-  .menu_item {
-    padding-left: 0;
-    padding-top: 50px;
-  }*/
   nav ul li:hover ul {
     display: none;
   }
@@ -290,49 +282,49 @@ nav ul li ul li a:hover {
     font-size: 10px;
   }
 }
-
-/*! Body of each page*/
+@media screen and (max-width: 1316px) {
+  .menu_item{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .menu_item{
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .logo_name{
+    font-size: 25px;
+  }
+}
 
 /*! Fonts and animations*/
 @font-face {
   font-family: "poppins";
-  src: url("PoppinsRegular.ttf");
+  src: url("../fonts/PoppinsRegular.ttf");
 }
 @font-face {
   font-family: "poiret";
-  src: url("/PoiretRegular.ttf");
+  src: url("../fonts/PoiretRegular.ttf");
 }
 @font-face {
   font-family: "fredoka";
-  src: url("/FredokaRegular.ttf");
+  src: url("../fonts/FredokaRegular.ttf");
 }
 
-.language-menu{
-  width: 25%;
-  height: 100%;
-  margin-left: 5%;
-  display: flex;
-  font-size: 12px;
-  justify-content: space-evenly;
-  padding-left: 0;
-  padding-right: 0;
-}
-#croatian{
-  padding-right: 5;
-  padding-left: 5;
-}
-#english{
-  padding-right: 5;
-  padding-left: 5;
-}
-#italian{
-  padding-right: 5;
-  padding-left: 5;
-}
+
 /*
 ! COLORS: 
 pink - #da91af
 gold - #ca9a1d
 yellow - #b7a25d
 black-ish - #131314
+
+#1a2021
+#131314
+#ca9a1d
+#b7a25d
+#2b2c35
+#da91af
+#3d3737
 */
